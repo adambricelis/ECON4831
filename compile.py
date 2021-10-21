@@ -10,4 +10,4 @@ rookie_performance_df['Combine Participant'] = rookie_performance_df['Player'].i
 rookie_performance_df.loc[rookie_performance_df['Player'].isin(all_rookie_df['Player']), ['All Rookie Team']] = all_rookie_df['Award']
 rookie_performance_df['All Rookie Team'].fillna('N/A', inplace=True)
 
-rookie_performance_df.to_csv('data.csv')
+rookie_performance_df.to_csv('data.csv', index=False)
